@@ -71,7 +71,7 @@
 
 			room.on('members', members => {
 				number = members.length - 1;
-				const isOfferer = members.length >= 2;
+				const isOfferer = members.length >= 10;
 
 				startWebRTC(isOfferer);
 			})
